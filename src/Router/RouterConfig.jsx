@@ -27,13 +27,14 @@ const router=createBrowserRouter(
             <Route path='/' element={<Layout/>}>
                 <Route path='' element={<Home/>}/>
                 <Route path='about' element={<About/>}/>
-                <Route path='contact' element={<Contact/>}/>
+                <Route path='contact' element={<Contact/>}/>                
                 <Route path='packages' element={<Packages/>}/>
                 <Route path='destinations' element={<Destinations/>}/>
             </Route>
-            <Route path='/' element={<Layout2/>}>
-                <Route path='soon' element={<Soon/>}/>
+            <Route path='soon' element={<Layout2/>}>
+                <Route path='' element={<Soon/>}/>
             </Route>
+
         </Route>
     )
 )

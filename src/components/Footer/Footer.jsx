@@ -1,5 +1,5 @@
 import '../../index.css'
-import {InstagramLogoIcon,FacebookLogoIcon,LinkedinLogoIcon,} from '@phosphor-icons/react'
+import {InstagramLogoIcon,FacebookLogoIcon,LinkedinLogoIcon} from '@phosphor-icons/react'
 import {Link} from 'react-router-dom'
 
 function Footer(){
