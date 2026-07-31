@@ -3,12 +3,14 @@ import {camel,camel2,camel3,camel4} from '../../assets'
 import {destinations,packages} from '../../data/data'
 import {DesCard,PackCard} from '../index'
 import { ArrowRightIcon } from '@phosphor-icons/react'
+import { useState } from 'react'
 
 function Home(){
-    let dests=[];
-    let packs=[];
-    for(let i=0;i<3;i++) dests.push(destinations[i]);
-    for(let i=0;i<3;i++) packs.push(packages[i]);
+  
+    const [dests,setDests]=useState([destinations[0],destinations[1],destinations[2]])
+
+    const [packs,setPacks]=useState([packages[0],packages[1],packages[2]])
+
     const whyChoose=[
         [0,"Local Guides","Every Trip is Led by an Expert Local Guide from the Region"],
         [1,"Small Groups","Max 12 Travellers per trip so the ruins and desert stay quiet"],

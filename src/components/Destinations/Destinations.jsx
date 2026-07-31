@@ -3,21 +3,13 @@ import { destinationTags, destinations } from "../../data/data"
 import DesCard from "../Cards/DestinationCard"
 import { Context } from "../../Context/Context"
 
-function back(tag){
-    if(tag=="Heritage") return "bg-ancient"
-    if(tag=="Desert") return "bg-sand"
-    if(tag=="Fort") return "bg-fort"
-    if(tag=="Lake") return "bg-indus"
-    if(tag=="All") return "bg-route"
-    if(tag=="Wildlife") return "bg-wildlife"
-    if(tag=="Port") return "bg-port"
-}
 
 function Destinations(){
     const context=useContext(Context);
     const [clicked,setClicked]=useState(()=>{
         return context.getLocalStorageItem("destinationFilter","All")
     })
+    const [dest,setDest]=useState(destinations)
 
     useEffect(()=>{
         let store=context.getLocalStorage()
@@ -26,6 +18,13 @@ function Destinations(){
             destinationFilter:clicked
         }
         localStorage.setItem('user',JSON.stringify(store))
+
+        setDest(destinations.filter((element)=>{
+            if(clicked=='All') return true
+            else if(element.tag==clicked) return true;
+            return false;
+        }))
+        
     },[clicked,context])
 
     return(
@@ -38,7 +37,7 @@ function Destinations(){
                     {
                         destinationTags.map((element)=>{
                             return(
-                                <div onClick={()=>{setClicked(element)}} key={element} className={`flex items-center  justify-center  ${clicked==element? `${back(element)} text-white`:"text-text"}`}>
+                                <div onClick={()=>{setClicked(element)}} key={element} className={`flex items-center  justify-center  ${clicked==element? "bg-rust text-white":"text-text"}`}>
                                     <h1 className="p-2 w-full flex items-center justify-center cursor-pointer  text-md">{element}</h1>
                                 </div>
                             )
@@ -48,11 +47,7 @@ function Destinations(){
 
                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-x-1 gap-y-4">
                     {
-                        destinations.filter((element)=>{
-                            if(clicked=='All') return true
-                            else if(element.tag==clicked) return true;
-                            return false;
-                        }).map((element)=>{
+                        dest.map((element)=>{
                             return(
                                 <div key={element.id}>
                                     <DesCard value={element}/>

@@ -14,9 +14,9 @@ function back(tag,element){
         if(element=="bg") return "bg-spiritual"
     }
     else if(tag=="Coastal"){
-        if(element=="border") return "border-coastal"
-        if(element=="text") return "text-coastal"
-        if(element=="bg") return "bg-coastal"
+        if(element=="border") return "border-indus"
+        if(element=="text") return "text-indus"
+        if(element=="bg") return "bg-indus"
     }
     else if(tag=="Desert") {
         if(element=="border") return "border-sand"
@@ -37,7 +37,7 @@ function back(tag,element){
 
 function PackCard({value}){
     return(
-    <div className={`h-full group hover:scale-105 bg-nav2  text-text font-gsans  border-2  ${back(value.tag,"border")} rounded-[5px]  flex flex-col items-center p-4 gap-7 justify-center w-full`}>
+    <div className={`h-full group hover:scale-105 bg-nav2  text-text font-gsans  border-2  ${back(value.tag,"border")} rounded-[5px]  flex flex-col items-center p-4 gap-5 justify-center w-full`}>
             <div className={`flex justify-start shrink-0      items-center w-full uppercase ${back(value.tag,"text")} `}>
                 <h1>{value.tag}</h1>
             </div>
@@ -47,7 +47,7 @@ function PackCard({value}){
                 <h1 className='text-md sm:text-xl'>{value.route}</h1>
             </div>
             <div className='w-[90%] h-0 border-t-2 border-text/20'></div>
-            <div className=" h-[5rem] grid grid-cols-3 w-full grid-row-1">
+            <div className=" h-[3rem] grid grid-cols-3 w-full grid-row-1">
                 <div className="grid-cols-1 gap-2   flex flex-col items-center justify-center">
                     <CalendarBlankIcon size={25}/>
                     <h1 className='text-xs sm:text-md'>{value.time}</h1>

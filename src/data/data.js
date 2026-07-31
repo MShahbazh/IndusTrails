@@ -67,6 +67,7 @@ const destinations=[
         tag:"Heritage"
     },
 ]
+const packageTags=["All","Heritage","Desert","Route","Wildlife","Coastal","Spiritual"]
 
 const packages=[
    
@@ -211,4 +212,41 @@ const packages=[
 
 ]
 
-export {destinations, packages,destinationTags}
+function filterPackages({name,from,to,tag,route}){
+    return packages.filter((element)=>{
+        if(tag=="All" || element.tag==tag) return true;
+        return false 
+    }).filter((element)=>{
+        if(name==' '||name=='->') return false
+        else if(name==""){
+            return true;
+        }
+        else{
+            const lower=element.name.toLowerCase()
+            if(lower.includes(name.toLowerCase())) return true
+        }
+        return false;
+    }).filter((element)=>{
+        if(route==' '||route=='->') return false
+        else if(route==""){
+            return true;
+        }
+        else{
+            const lower=element.route.toLowerCase()
+            if(lower.includes(route.toLowerCase())) return true
+        }
+        return false;
+
+    }).filter((element)=>{
+        const price=Number(element.price.split(' ')[1])
+        if(to){
+            if(price>Number(to)) return false
+        }
+        if(from){
+            if(price<Number(from)) return false
+        }
+        return true
+    })
+}
+
+export {destinations, packages,destinationTags,packageTags,filterPackages}

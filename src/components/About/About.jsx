@@ -2,8 +2,8 @@ function About(){
     return(
         <div className=" bg-nav flex flex-col items-center justify-center py-20 px-10 gap-10">
             
-                <h1 className='text-md text-text/40 font-gsans font-bold'>ABOUT</h1>
                <div className="flex flex-col items-center justify-center gap-4 ">
+                <h1 className='text-md text-text/40 font-gsans font-bold'>ABOUT</h1>
                  <h1 className='text-4xl font-fraunces text-rust'>Why do we Exist ?</h1>
                 <p className="text-text/50 font-gsans">A Sindh Focused Tour and Travelling Site with Complete Packages and Amazing Experience</p>
                </div >
@@ -12,7 +12,7 @@ function About(){
                </p>
                <div className="grid grid-cols-1 md:grid-cols-3 font-gsans w-full gap-5 text-text" >
                 <div className='w-full flex flex-col items-center justify-center border-2 rounded-[5px] border-text p-5'>
-                    <h1 className="text-2xl">20+</h1>
+                    <h1 className="text-2xl">12+</h1>
                     <p className="text-xl">Packages</p>
                 </div>
                 <div className='w-full flex flex-col items-center justify-center border-2 rounded-[5px] border-text p-5'>
