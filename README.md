@@ -1,6 +1,6 @@
 # IndusTrails
 
-A Simple React Based Travel and Tour Website. This is a travel guide website focused entirely on Sindh, Pakistan - covering heritage sites, desert routes, coastal towns, lakes, wildlife parks, forts  across the province.
+A Simple React Based Travel and Tour Static Responsive Website. This is a travel guide website focused entirely on Sindh, Pakistan - covering heritage sites, desert routes, coastal towns, lakes, wildlife parks, forts  across the province.
 
 
 # Tech Stack
