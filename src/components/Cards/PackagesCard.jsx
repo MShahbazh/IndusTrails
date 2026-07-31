@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 
 function back(tag,element){  
-
     if(tag=="Heritage"){
         if(element=="border") return "border-ancient"
         if(element=="text") return "text-ancient"
@@ -28,6 +27,11 @@ function back(tag,element){
         if(element=="border") return "border-route"
         if(element=="text") return "text-route"
         if(element=="bg") return "bg-route"
+    }
+    else if(tag=="Wildlife"){
+        if(element=="border") return "border-wildlife"
+        if(element=="text") return "text-wildlife"
+        if(element=="bg") return "bg-wildlife"
     }
 }
 

@@ -8,5 +8,6 @@ import Packages from './Packages/Packages'
 import Soon from './Soon/Soon'
 import DesCard from './Cards/DestinationCard'
 import PackCard from './Cards/PackagesCard'
+import Scroll from './Scroll/Scroll'
 
-export {Header,Footer,Home,Destinations,About,Contact,Packages,Soon,DesCard,PackCard}
+export {Header,Footer,Home,Destinations,About,Contact,Packages,Soon,DesCard,PackCard,Scroll}

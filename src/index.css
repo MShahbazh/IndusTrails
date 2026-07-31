@@ -13,7 +13,6 @@
 
   --color-nav:#FFFDF8;
   --color-rust:#B54B32; 
-  --color-water:#2C5C68;
   --color-text:#000000;
   --color-sand:#C9932E;
   --color-ancient:#6B7B4F;
@@ -24,10 +23,12 @@
   --color-route: #5C6670;
   --color-dark:#FFFFFF;
   --color-antidarkRust:#B54B32;
+  --color-wildlife: #8B5E3C;
+  --color-fort: #A38B6D; 
+  --color-port: #3D7A6E; 
 }
 
 .dark{
-    --color-water:#7EC0CD;
     --color-rust:#E58259;
     --color-nav:#1A1511;    
     --color-text:#FFFFFF;
@@ -41,6 +42,9 @@
     --color-dark:#000000;
     --color-spiritual: #582A35;
     --color-route: #577ba8;
+    --color-wildlife: #63412A;
+    --color-fort: #74604A;
+    --color-port: #2B5751;
 }
 
 

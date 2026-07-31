@@ -1,5 +1,6 @@
 import { thar,daro,makli,keenjhar,kot,rani,kirther,mohatta,keti} from "../assets"
 
+const destinationTags=["All","Desert","Heritage","Port","Lake","Fort"]
 
 const destinations=[
     {
@@ -46,7 +47,7 @@ const destinations=[
     },
     {
         id:6,
-        name:"Kirther National Park",
+        name:"Kirther Park",
         src:kirther,
         region:"Jamshoro",
         tag:"Wildlife"
@@ -137,7 +138,7 @@ const packages=[
     
     {
         id:7,
-        tag:"Nature",
+        tag:"Wildlife",
         name:"Kirthar Safari",
         route:"Start -> Kirthar National Park",
         time:"Full Day",
@@ -146,7 +147,7 @@ const packages=[
     },
     {
         id:8,
-        tag:"Nature",
+        tag:"Wildlife",
         name:"Manchar Lake Boat Day",
         route:"Start -> Sehwan -> Manchar Lake",
         time:"Half Day",
@@ -210,4 +211,4 @@ const packages=[
 
 ]
 
-export {destinations, packages}
+export {destinations, packages,destinationTags}
