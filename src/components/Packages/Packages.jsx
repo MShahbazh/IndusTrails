@@ -1,7 +1,7 @@
 import { MagnifyingGlassIcon,ArrowDownIcon  } from "@phosphor-icons/react"
 import { useState } from "react"
 import { packages, packageTags,filterPackages } from "../../data/data"
-import PackCard from "../Cards/PackagesCard"
+import PackCard from "../cards/PackagesCard"
 
 function Packages(){
     const [dropDown,setDropDown]=useState(false)

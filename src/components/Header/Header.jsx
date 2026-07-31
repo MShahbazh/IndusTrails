@@ -1,6 +1,6 @@
 import {SunIcon , MoonIcon, ListIcon, XIcon  } from '@phosphor-icons/react'
 import { useContext, useState } from 'react'
-import { Context } from '../../Context/Context'
+import {Context} from '../../context/Context'
 import '../../index.css';
 import {Link,NavLink} from 'react-router-dom'
 

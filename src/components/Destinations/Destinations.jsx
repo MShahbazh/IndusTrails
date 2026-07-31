@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react"
 import { destinationTags, destinations } from "../../data/data"
-import DesCard from "../Cards/DestinationCard"
-import { Context } from "../../Context/Context"
+import DesCard from "../cards/DestinationCard"
+import { Context } from "../../context/Context"
 
 
 function Destinations(){
