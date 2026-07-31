@@ -11,7 +11,7 @@ A Simple React Based Travel and Tour Website. This is a travel guide website foc
 - Phosphor Icons
 
 
-  # Project Structure
+# Project Structure
 ```
 src/
 ├── assets/
