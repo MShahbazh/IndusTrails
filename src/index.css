@@ -1,11 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
 @import "tailwindcss";
 
+/* @variant dark(&:where(.dark,.dark *)); */
+
+* {
+    transition-duration: 300ms;
+}
+
 @theme{
   --font-fraunces: "Fraunces",serif;
   --font-gsans:"Google Sans Flex";
 
   --color-nav:#FFFDF8;
+  --color-rust:#B54B32; 
+  --color-water:#2C5C68;
+  --color-text:#000000;
+  --color-sand:#C9932E;
+  --color-ancient:#6B7B4F;
+  --color-indus:#2F6B85;
+  --color-spiritual: #7A3B49;
+  --color-nav2:#F3EBDA;
+  --color-gray2:#8A8270;
+  --color-route: #5C6670;
+  --color-dark:#FFFFFF;
+  --color-antidarkRust:#B54B32;
+}
+
+.dark{
+    --color-water:#7EC0CD;
+    --color-rust:#E58259;
+    --color-nav:#1A1511;    
+    --color-text:#FFFFFF;
+    --color-sand:#E8B25C;
+    /* --color-ancient:#A3B489; */
+    --color-ancient:#7ea148;
+    --color-indus:#7FC4DB;
+    --color-nav2:#2E251D;
+    --color-nav2:#543820;
+    --color-gray2:#B3A791;
+    --color-dark:#000000;
+    --color-spiritual: #582A35;
+    --color-route: #577ba8;
 }
 
 

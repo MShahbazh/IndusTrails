@@ -1,0 +1,15 @@
+import camel from './camel.jpg'
+import thar from './thar.jpg'
+import daro from './daro.jpg'
+import makli from './makli.jpg'
+import keenjhar from './keenjhar.jpg'
+import kot from './kot.jpg'
+import rani from './rani.jpg'
+import kirther from './kirther.jpg'
+import mohatta from './mohatta.jpg'
+import keti from './keti.jpg'
+import camel2 from './camel2.jpg'
+import camel3 from './camel3.jpg'
+import camel4 from './camel4.jpg'
+
+export {camel,thar,daro,makli,keenjhar,kot,rani,mohatta,kirther,keti,camel2,camel3,camel4}
