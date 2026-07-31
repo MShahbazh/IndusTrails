@@ -1,10 +1,12 @@
 import {Home,Destinations,Header,Footer,About,Contact,Packages,Soon} from '../components/index'
 import { createBrowserRouter, createRoutesFromElements, Route} from 'react-router-dom'
 import { Outlet } from 'react-router-dom'
+import {Scroll} from '../components'
 
 function Layout(){
     return(
         <>
+            <Scroll/>
             <Header/>
             <Outlet/>
             <Footer/>
@@ -15,6 +17,7 @@ function Layout(){
 function Layout2(){
     return(
         <>
+            <Scroll/>
             <Header/>
             <Outlet/>
         </>
